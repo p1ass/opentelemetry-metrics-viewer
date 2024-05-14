@@ -5,6 +5,14 @@
     "lint:fix": "biome check --apply ."
   },
   "dependencies": {
+    "@buf/opentelemetry_opentelemetry.bufbuild_es": "1.9.0-20240508200659-84bab7e375f9.1",
+    "@buf/opentelemetry_opentelemetry.connectrpc_es": "1.4.0-20240508200659-84bab7e375f9.2",
+    "@bufbuild/buf": "^1.31.0",
+    "@bufbuild/protobuf": "^1.9.0",
+    "@bufbuild/protoc-gen-es": "^1.9.0",
+    "@connectrpc/connect": "^1.4.0",
+    "@connectrpc/connect-node": "^1.4.0",
+    "@connectrpc/protoc-gen-connect-es": "^1.4.0",
     "@hono/node-server": "^1.8.2",
     "hono": "^4.1.1"
   },

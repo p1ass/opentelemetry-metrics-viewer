@@ -5,6 +5,30 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@buf/opentelemetry_opentelemetry.bufbuild_es':
+    specifier: 1.9.0-20240508200659-84bab7e375f9.1
+    version: 1.9.0-20240508200659-84bab7e375f9.1(@bufbuild/protobuf@1.9.0)
+  '@buf/opentelemetry_opentelemetry.connectrpc_es':
+    specifier: 1.4.0-20240508200659-84bab7e375f9.2
+    version: 1.4.0-20240508200659-84bab7e375f9.2(@bufbuild/protobuf@1.9.0)(@connectrpc/connect@1.4.0)
+  '@bufbuild/buf':
+    specifier: ^1.31.0
+    version: 1.31.0
+  '@bufbuild/protobuf':
+    specifier: ^1.9.0
+    version: 1.9.0
+  '@bufbuild/protoc-gen-es':
+    specifier: ^1.9.0
+    version: 1.9.0(@bufbuild/protobuf@1.9.0)
+  '@connectrpc/connect':
+    specifier: ^1.4.0
+    version: 1.4.0(@bufbuild/protobuf@1.9.0)
+  '@connectrpc/connect-node':
+    specifier: ^1.4.0
+    version: 1.4.0(@bufbuild/protobuf@1.9.0)(@connectrpc/connect@1.4.0)
+  '@connectrpc/protoc-gen-connect-es':
+    specifier: ^1.4.0
+    version: 1.4.0(@bufbuild/protoc-gen-es@1.9.0)(@connectrpc/connect@1.4.0)
   '@hono/node-server':
     specifier: ^1.8.2
     version: 1.11.1
@@ -112,6 +136,172 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@buf/opentelemetry_opentelemetry.bufbuild_es@1.7.2-20240508200659-84bab7e375f9.1(@bufbuild/protobuf@1.9.0):
+    resolution: {tarball: https://buf.build/gen/npm/v1/@buf/opentelemetry_opentelemetry.bufbuild_es/-/opentelemetry_opentelemetry.bufbuild_es-1.7.2-20240508200659-84bab7e375f9.1.tgz}
+    peerDependencies:
+      '@bufbuild/protobuf': ^1.7.2
+    dependencies:
+      '@bufbuild/protobuf': 1.9.0
+    dev: false
+
+  /@buf/opentelemetry_opentelemetry.bufbuild_es@1.9.0-20240508200659-84bab7e375f9.1(@bufbuild/protobuf@1.9.0):
+    resolution: {tarball: https://buf.build/gen/npm/v1/@buf/opentelemetry_opentelemetry.bufbuild_es/-/opentelemetry_opentelemetry.bufbuild_es-1.9.0-20240508200659-84bab7e375f9.1.tgz}
+    peerDependencies:
+      '@bufbuild/protobuf': ^1.9.0
+    dependencies:
+      '@bufbuild/protobuf': 1.9.0
+    dev: false
+
+  /@buf/opentelemetry_opentelemetry.connectrpc_es@1.4.0-20240508200659-84bab7e375f9.2(@bufbuild/protobuf@1.9.0)(@connectrpc/connect@1.4.0):
+    resolution: {tarball: https://buf.build/gen/npm/v1/@buf/opentelemetry_opentelemetry.connectrpc_es/-/opentelemetry_opentelemetry.connectrpc_es-1.4.0-20240508200659-84bab7e375f9.2.tgz}
+    peerDependencies:
+      '@connectrpc/connect': ^1.4.0
+    dependencies:
+      '@buf/opentelemetry_opentelemetry.bufbuild_es': 1.7.2-20240508200659-84bab7e375f9.1(@bufbuild/protobuf@1.9.0)
+      '@connectrpc/connect': 1.4.0(@bufbuild/protobuf@1.9.0)
+    transitivePeerDependencies:
+      - '@bufbuild/protobuf'
+    dev: false
+
+  /@bufbuild/buf-darwin-arm64@1.31.0:
+    resolution: {integrity: sha512-C0jArGS/SW0jfpBBmG6xEhUBWQTsGInnPr7y44WYWNS/U5OnnWPJtYQ7xbH0mzYDMx7sZVRV0FKvPO0FPKS+hA==}
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@bufbuild/buf-darwin-x64@1.31.0:
+    resolution: {integrity: sha512-oBTe1T4l2WSukAG+9YS7VHID4N1CuSvAxGBfuzpFQrjjiQZaaTfYuLqqVP6408MyCN7X/LOjfCekR1QToVweNw==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@bufbuild/buf-linux-aarch64@1.31.0:
+    resolution: {integrity: sha512-UN9KsTuO9YS5Vefj/CaqX1wO+hvc3AyGElxzOHMc7S3MWEuqSAFOhxu5I7CyOr2/yoZO2qZPPR29HuzmQsb2+w==}
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@bufbuild/buf-linux-x64@1.31.0:
+    resolution: {integrity: sha512-4uKq5Iu5tNEFE3Mz9a52KFCaywg5xLqwhN6Kf4kAk34kxWJgQ8D3WFe9ZpXHzH7Lj00u3Q+V/3vKCVATHR3tkw==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@bufbuild/buf-win32-arm64@1.31.0:
+    resolution: {integrity: sha512-jz7GenlNsqwbC3qaHcBHBO35MycZ1gV8OUSRp/wTXGgZsEZzAyw335JA2NWL+5LaI8cF+CsYd6/uuWzKkdCKTQ==}
+    engines: {node: '>=12'}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@bufbuild/buf-win32-x64@1.31.0:
+    resolution: {integrity: sha512-gw7p3PYam0g7hNwIhNphua5P8GBZczginoWNK3jk5sGVv0TzWOdHrjkVVhkc3DJbRZEg10ExGI3qRfCqiX1IHw==}
+    engines: {node: '>=12'}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@bufbuild/buf@1.31.0:
+    resolution: {integrity: sha512-kM/eueGkp0NDo8p8B6GXr1MdCzf4w8zEV1gbEiDlaLYDoyeHGLtlf5jF/hrb6MsvCccy3x7cc+cj4Wn/DmoR2g==}
+    engines: {node: '>=12'}
+    hasBin: true
+    requiresBuild: true
+    optionalDependencies:
+      '@bufbuild/buf-darwin-arm64': 1.31.0
+      '@bufbuild/buf-darwin-x64': 1.31.0
+      '@bufbuild/buf-linux-aarch64': 1.31.0
+      '@bufbuild/buf-linux-x64': 1.31.0
+      '@bufbuild/buf-win32-arm64': 1.31.0
+      '@bufbuild/buf-win32-x64': 1.31.0
+    dev: false
+
+  /@bufbuild/protobuf@1.9.0:
+    resolution: {integrity: sha512-W7gp8Q/v1NlCZLsv8pQ3Y0uCu/SHgXOVFK+eUluUKWXmsb6VHkpNx0apdOWWcDbB9sJoKeP8uPrjmehJz6xETQ==}
+    dev: false
+
+  /@bufbuild/protoc-gen-es@1.9.0(@bufbuild/protobuf@1.9.0):
+    resolution: {integrity: sha512-LJy1nC3Jsfdhs9v48P7qF6YXIqh+usFhXSVzJDTmw0yKjxQ3CKBNISRtaMql/g9hb1MLRU6unHCcFfdz4HSO/Q==}
+    engines: {node: '>=14'}
+    hasBin: true
+    peerDependencies:
+      '@bufbuild/protobuf': 1.9.0
+    peerDependenciesMeta:
+      '@bufbuild/protobuf':
+        optional: true
+    dependencies:
+      '@bufbuild/protobuf': 1.9.0
+      '@bufbuild/protoplugin': 1.9.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /@bufbuild/protoplugin@1.9.0:
+    resolution: {integrity: sha512-/mxMiGs5h78RUHT7v4+mv0Wt0gyRf/SOS5PLzKEg2sclEAlFPbXfZ8HjlvxJpXZP/YpP3HvsW/mil3E69G0mXg==}
+    dependencies:
+      '@bufbuild/protobuf': 1.9.0
+      '@typescript/vfs': 1.5.0
+      typescript: 4.5.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /@connectrpc/connect-node@1.4.0(@bufbuild/protobuf@1.9.0)(@connectrpc/connect@1.4.0):
+    resolution: {integrity: sha512-0ANnrr6SvsjevsWEgdzHy7BaHkluZyS6s4xNoVt7RBHFR5V/kT9lPokoIbYUOU9JHzdRgTaS3x5595mwUsu15g==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      '@bufbuild/protobuf': ^1.4.2
+      '@connectrpc/connect': 1.4.0
+    dependencies:
+      '@bufbuild/protobuf': 1.9.0
+      '@connectrpc/connect': 1.4.0(@bufbuild/protobuf@1.9.0)
+      undici: 5.28.4
+    dev: false
+
+  /@connectrpc/connect@1.4.0(@bufbuild/protobuf@1.9.0):
+    resolution: {integrity: sha512-vZeOkKaAjyV4+RH3+rJZIfDFJAfr+7fyYr6sLDKbYX3uuTVszhFe9/YKf5DNqrDb5cKdKVlYkGn6DTDqMitAnA==}
+    peerDependencies:
+      '@bufbuild/protobuf': ^1.4.2
+    dependencies:
+      '@bufbuild/protobuf': 1.9.0
+    dev: false
+
+  /@connectrpc/protoc-gen-connect-es@1.4.0(@bufbuild/protoc-gen-es@1.9.0)(@connectrpc/connect@1.4.0):
+    resolution: {integrity: sha512-/7vQ8Q7mEBhV8qEVh/eifRQlQnf8EJ6weMwCD2DljVAQRlZYcW9SLxjYZhV1uM1ZZqQC7Cw2vvgXRg2XQswHBg==}
+    engines: {node: '>=16.0.0'}
+    hasBin: true
+    peerDependencies:
+      '@bufbuild/protoc-gen-es': ^1.7.2
+      '@connectrpc/connect': 1.4.0
+    peerDependenciesMeta:
+      '@bufbuild/protoc-gen-es':
+        optional: true
+      '@connectrpc/connect':
+        optional: true
+    dependencies:
+      '@bufbuild/protobuf': 1.9.0
+      '@bufbuild/protoc-gen-es': 1.9.0(@bufbuild/protobuf@1.9.0)
+      '@bufbuild/protoplugin': 1.9.0
+      '@connectrpc/connect': 1.4.0(@bufbuild/protobuf@1.9.0)
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
 
   /@esbuild/android-arm64@0.18.20:
     resolution: {integrity: sha512-Nz4rJcchGDtENV0eMKUNa6L12zz2zBDXuhj/Vjh18zGqB44Bi7MBMSXjgunJgjRhCmKOjnPuZp4Mb6OKqtMHLQ==}
@@ -311,6 +501,11 @@ packages:
     dev: true
     optional: true
 
+  /@fastify/busboy@2.1.1:
+    resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
+    engines: {node: '>=14'}
+    dev: false
+
   /@hono/node-server@1.11.1:
     resolution: {integrity: sha512-GW1Iomhmm1o4Z+X57xGby8A35Cu9UZLL7pSMdqDBkD99U5cywff8F+8hLk5aBTzNubnsFAvWQ/fZjNwPsEn9lA==}
     engines: {node: '>=18.14.1'}
@@ -322,9 +517,29 @@ packages:
       undici-types: 5.26.5
     dev: true
 
+  /@typescript/vfs@1.5.0:
+    resolution: {integrity: sha512-AJS307bPgbsZZ9ggCT3wwpg3VbTKMFNHfaY/uF0ahSkYYrPF2dSSKDNIDIQAHm9qJqbLvCsSJH7yN4Vs/CsMMg==}
+    dependencies:
+      debug: 4.3.4
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
   /buffer-from@1.1.2:
     resolution: {integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==}
     dev: true
+
+  /debug@4.3.4:
+    resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+    dependencies:
+      ms: 2.1.2
+    dev: false
 
   /esbuild@0.18.20:
     resolution: {integrity: sha512-ceqxoedUrcayh7Y7ZX6NdbbDzGROiyVBgC4PriJThBKSVPWnnFHZAkfI1lJT8QFkOwH4qOS2SJkS4wvpGl8BpA==}
@@ -375,6 +590,10 @@ packages:
     engines: {node: '>=16.0.0'}
     dev: false
 
+  /ms@2.1.2:
+    resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
+    dev: false
+
   /resolve-pkg-maps@1.0.0:
     resolution: {integrity: sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==}
     dev: true
@@ -402,6 +621,19 @@ packages:
       fsevents: 2.3.3
     dev: true
 
+  /typescript@4.5.2:
+    resolution: {integrity: sha512-5BlMof9H1yGt0P8/WF+wPNw6GfctgGjXp5hkblpyT+8rkASSmkUKMXrxR0Xg8ThVCi/JnHQiKXeBaEwCeQwMFw==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: false
+
   /undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
     dev: true
+
+  /undici@5.28.4:
+    resolution: {integrity: sha512-72RFADWFqKmUb2hmmvNODKL3p9hcB6Gt2DOQMis1SEBaV6a4MH8soBvzg+95CYhCKPFedut2JY9bMfrDl9D23g==}
+    engines: {node: '>=14.0'}
+    dependencies:
+      '@fastify/busboy': 2.1.1
+    dev: false
