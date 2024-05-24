@@ -14,7 +14,7 @@
     "@connectrpc/connect-node": "^1.4.0",
     "@connectrpc/protoc-gen-connect-es": "^1.4.0",
     "@hono/node-server": "^1.8.2",
-    "hono": "^4.1.1"
+    "hono": "^4.3.10"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.7.3",
