@@ -7,28 +7,28 @@ settings:
 dependencies:
   '@buf/opentelemetry_opentelemetry.bufbuild_es':
     specifier: 1.9.0-20240508200659-84bab7e375f9.1
-    version: 1.9.0-20240508200659-84bab7e375f9.1(@bufbuild/protobuf@1.9.0)
+    version: 1.9.0-20240508200659-84bab7e375f9.1(@bufbuild/protobuf@1.10.0)
   '@buf/opentelemetry_opentelemetry.connectrpc_es':
     specifier: 1.4.0-20240508200659-84bab7e375f9.2
-    version: 1.4.0-20240508200659-84bab7e375f9.2(@bufbuild/protobuf@1.9.0)(@connectrpc/connect@1.4.0)
+    version: 1.4.0-20240508200659-84bab7e375f9.2(@bufbuild/protobuf@1.10.0)(@connectrpc/connect@1.4.0)
   '@bufbuild/buf':
     specifier: ^1.31.0
     version: 1.31.0
   '@bufbuild/protobuf':
-    specifier: ^1.9.0
-    version: 1.9.0
+    specifier: ^1.10.0
+    version: 1.10.0
   '@bufbuild/protoc-gen-es':
-    specifier: ^1.9.0
-    version: 1.9.0(@bufbuild/protobuf@1.9.0)
+    specifier: ^1.10.0
+    version: 1.10.0(@bufbuild/protobuf@1.10.0)
   '@connectrpc/connect':
     specifier: ^1.4.0
-    version: 1.4.0(@bufbuild/protobuf@1.9.0)
+    version: 1.4.0(@bufbuild/protobuf@1.10.0)
   '@connectrpc/connect-node':
     specifier: ^1.4.0
-    version: 1.4.0(@bufbuild/protobuf@1.9.0)(@connectrpc/connect@1.4.0)
+    version: 1.4.0(@bufbuild/protobuf@1.10.0)(@connectrpc/connect@1.4.0)
   '@connectrpc/protoc-gen-connect-es':
     specifier: ^1.4.0
-    version: 1.4.0(@bufbuild/protoc-gen-es@1.9.0)(@connectrpc/connect@1.4.0)
+    version: 1.4.0(@bufbuild/protoc-gen-es@1.10.0)(@connectrpc/connect@1.4.0)
   '@hono/node-server':
     specifier: ^1.8.2
     version: 1.11.1
@@ -137,29 +137,29 @@ packages:
     dev: true
     optional: true
 
-  /@buf/opentelemetry_opentelemetry.bufbuild_es@1.7.2-20240508200659-84bab7e375f9.1(@bufbuild/protobuf@1.9.0):
+  /@buf/opentelemetry_opentelemetry.bufbuild_es@1.7.2-20240508200659-84bab7e375f9.1(@bufbuild/protobuf@1.10.0):
     resolution: {tarball: https://buf.build/gen/npm/v1/@buf/opentelemetry_opentelemetry.bufbuild_es/-/opentelemetry_opentelemetry.bufbuild_es-1.7.2-20240508200659-84bab7e375f9.1.tgz}
     peerDependencies:
       '@bufbuild/protobuf': ^1.7.2
     dependencies:
-      '@bufbuild/protobuf': 1.9.0
+      '@bufbuild/protobuf': 1.10.0
     dev: false
 
-  /@buf/opentelemetry_opentelemetry.bufbuild_es@1.9.0-20240508200659-84bab7e375f9.1(@bufbuild/protobuf@1.9.0):
+  /@buf/opentelemetry_opentelemetry.bufbuild_es@1.9.0-20240508200659-84bab7e375f9.1(@bufbuild/protobuf@1.10.0):
     resolution: {tarball: https://buf.build/gen/npm/v1/@buf/opentelemetry_opentelemetry.bufbuild_es/-/opentelemetry_opentelemetry.bufbuild_es-1.9.0-20240508200659-84bab7e375f9.1.tgz}
     peerDependencies:
       '@bufbuild/protobuf': ^1.9.0
     dependencies:
-      '@bufbuild/protobuf': 1.9.0
+      '@bufbuild/protobuf': 1.10.0
     dev: false
 
-  /@buf/opentelemetry_opentelemetry.connectrpc_es@1.4.0-20240508200659-84bab7e375f9.2(@bufbuild/protobuf@1.9.0)(@connectrpc/connect@1.4.0):
+  /@buf/opentelemetry_opentelemetry.connectrpc_es@1.4.0-20240508200659-84bab7e375f9.2(@bufbuild/protobuf@1.10.0)(@connectrpc/connect@1.4.0):
     resolution: {tarball: https://buf.build/gen/npm/v1/@buf/opentelemetry_opentelemetry.connectrpc_es/-/opentelemetry_opentelemetry.connectrpc_es-1.4.0-20240508200659-84bab7e375f9.2.tgz}
     peerDependencies:
       '@connectrpc/connect': ^1.4.0
     dependencies:
-      '@buf/opentelemetry_opentelemetry.bufbuild_es': 1.7.2-20240508200659-84bab7e375f9.1(@bufbuild/protobuf@1.9.0)
-      '@connectrpc/connect': 1.4.0(@bufbuild/protobuf@1.9.0)
+      '@buf/opentelemetry_opentelemetry.bufbuild_es': 1.7.2-20240508200659-84bab7e375f9.1(@bufbuild/protobuf@1.10.0)
+      '@connectrpc/connect': 1.4.0(@bufbuild/protobuf@1.10.0)
     transitivePeerDependencies:
       - '@bufbuild/protobuf'
     dev: false
@@ -232,22 +232,36 @@ packages:
       '@bufbuild/buf-win32-x64': 1.31.0
     dev: false
 
+  /@bufbuild/protobuf@1.10.0:
+    resolution: {integrity: sha512-QDdVFLoN93Zjg36NoQPZfsVH9tZew7wKDKyV5qRdj8ntT4wQCOradQjRaTdwMhWUYsgKsvCINKKm87FdEk96Ag==}
+    dev: false
+
   /@bufbuild/protobuf@1.9.0:
     resolution: {integrity: sha512-W7gp8Q/v1NlCZLsv8pQ3Y0uCu/SHgXOVFK+eUluUKWXmsb6VHkpNx0apdOWWcDbB9sJoKeP8uPrjmehJz6xETQ==}
     dev: false
 
-  /@bufbuild/protoc-gen-es@1.9.0(@bufbuild/protobuf@1.9.0):
-    resolution: {integrity: sha512-LJy1nC3Jsfdhs9v48P7qF6YXIqh+usFhXSVzJDTmw0yKjxQ3CKBNISRtaMql/g9hb1MLRU6unHCcFfdz4HSO/Q==}
+  /@bufbuild/protoc-gen-es@1.10.0(@bufbuild/protobuf@1.10.0):
+    resolution: {integrity: sha512-zBYBsVT/ul4uZb6F+kD7/k4sWNHVVbEPfJwKi0FDr+9VJo8MKIofI6pkr5ksBLr4fi/74r+e/75Xi/0clL5dXg==}
     engines: {node: '>=14'}
     hasBin: true
     peerDependencies:
-      '@bufbuild/protobuf': 1.9.0
+      '@bufbuild/protobuf': 1.10.0
     peerDependenciesMeta:
       '@bufbuild/protobuf':
         optional: true
     dependencies:
-      '@bufbuild/protobuf': 1.9.0
-      '@bufbuild/protoplugin': 1.9.0
+      '@bufbuild/protobuf': 1.10.0
+      '@bufbuild/protoplugin': 1.10.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /@bufbuild/protoplugin@1.10.0:
+    resolution: {integrity: sha512-u6NE4vL0lw1+EK4/PiE/SQB7fKO4LRJNTEScIXVOi2x88K/c8WKc/k0KyEaA0asVBMpwekJQZGnRyj04ZtN5Gg==}
+    dependencies:
+      '@bufbuild/protobuf': 1.10.0
+      '@typescript/vfs': 1.5.0
+      typescript: 4.5.2
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -262,27 +276,27 @@ packages:
       - supports-color
     dev: false
 
-  /@connectrpc/connect-node@1.4.0(@bufbuild/protobuf@1.9.0)(@connectrpc/connect@1.4.0):
+  /@connectrpc/connect-node@1.4.0(@bufbuild/protobuf@1.10.0)(@connectrpc/connect@1.4.0):
     resolution: {integrity: sha512-0ANnrr6SvsjevsWEgdzHy7BaHkluZyS6s4xNoVt7RBHFR5V/kT9lPokoIbYUOU9JHzdRgTaS3x5595mwUsu15g==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       '@bufbuild/protobuf': ^1.4.2
       '@connectrpc/connect': 1.4.0
     dependencies:
-      '@bufbuild/protobuf': 1.9.0
-      '@connectrpc/connect': 1.4.0(@bufbuild/protobuf@1.9.0)
+      '@bufbuild/protobuf': 1.10.0
+      '@connectrpc/connect': 1.4.0(@bufbuild/protobuf@1.10.0)
       undici: 5.28.4
     dev: false
 
-  /@connectrpc/connect@1.4.0(@bufbuild/protobuf@1.9.0):
+  /@connectrpc/connect@1.4.0(@bufbuild/protobuf@1.10.0):
     resolution: {integrity: sha512-vZeOkKaAjyV4+RH3+rJZIfDFJAfr+7fyYr6sLDKbYX3uuTVszhFe9/YKf5DNqrDb5cKdKVlYkGn6DTDqMitAnA==}
     peerDependencies:
       '@bufbuild/protobuf': ^1.4.2
     dependencies:
-      '@bufbuild/protobuf': 1.9.0
+      '@bufbuild/protobuf': 1.10.0
     dev: false
 
-  /@connectrpc/protoc-gen-connect-es@1.4.0(@bufbuild/protoc-gen-es@1.9.0)(@connectrpc/connect@1.4.0):
+  /@connectrpc/protoc-gen-connect-es@1.4.0(@bufbuild/protoc-gen-es@1.10.0)(@connectrpc/connect@1.4.0):
     resolution: {integrity: sha512-/7vQ8Q7mEBhV8qEVh/eifRQlQnf8EJ6weMwCD2DljVAQRlZYcW9SLxjYZhV1uM1ZZqQC7Cw2vvgXRg2XQswHBg==}
     engines: {node: '>=16.0.0'}
     hasBin: true
@@ -295,10 +309,10 @@ packages:
       '@connectrpc/connect':
         optional: true
     dependencies:
-      '@bufbuild/protobuf': 1.9.0
-      '@bufbuild/protoc-gen-es': 1.9.0(@bufbuild/protobuf@1.9.0)
+      '@bufbuild/protobuf': 1.10.0
+      '@bufbuild/protoc-gen-es': 1.10.0(@bufbuild/protobuf@1.10.0)
       '@bufbuild/protoplugin': 1.9.0
-      '@connectrpc/connect': 1.4.0(@bufbuild/protobuf@1.9.0)
+      '@connectrpc/connect': 1.4.0(@bufbuild/protobuf@1.10.0)
     transitivePeerDependencies:
       - supports-color
     dev: false
