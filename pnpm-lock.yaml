@@ -33,8 +33,8 @@ dependencies:
     specifier: ^1.8.2
     version: 1.11.1
   hono:
-    specifier: ^4.1.1
-    version: 4.3.6
+    specifier: ^4.4.3
+    version: 4.4.3
 
 devDependencies:
   '@biomejs/biome':
@@ -585,8 +585,8 @@ packages:
       resolve-pkg-maps: 1.0.0
     dev: true
 
-  /hono@4.3.6:
-    resolution: {integrity: sha512-2IqXwrxWF4tG2AR7b5tMYn+KEnWK8UvdC/NUSbOKWj/Kj11OJqel58FxyiXLK5CcKLiL8aGtTe4lkBKXyaHMBQ==}
+  /hono@4.4.3:
+    resolution: {integrity: sha512-G7rTruKzrHXPz1KB4B50deKydPA9+aeei+WC1hikP0abN9N+a6yORuweageaqWocYfYNkpoqA5ezGV2mzQasvw==}
     engines: {node: '>=16.0.0'}
     dev: false
 
