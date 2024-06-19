@@ -41,8 +41,8 @@ devDependencies:
     specifier: ^1.7.3
     version: 1.7.3
   '@types/node':
-    specifier: ^20.11.17
-    version: 20.12.12
+    specifier: ^20.14.5
+    version: 20.14.5
   tsx:
     specifier: ^3.12.2
     version: 3.14.0
@@ -511,8 +511,8 @@ packages:
     engines: {node: '>=18.14.1'}
     dev: false
 
-  /@types/node@20.12.12:
-    resolution: {integrity: sha512-eWLDGF/FOSPtAvEqeRAQ4C8LSA7M1I7i0ky1I8U7kD1J5ITyW3AsRhQrKVoWf5pFKZ2kILsEGJhsI9r93PYnOw==}
+  /@types/node@20.14.5:
+    resolution: {integrity: sha512-aoRR+fJkZT2l0aGOJhuA8frnCSoNX6W7U2mpNq63+BxBIj5BQFt8rHy627kijCmm63ijdSdwvGgpUsU6MBsZZA==}
     dependencies:
       undici-types: 5.26.5
     dev: true
