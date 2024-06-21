@@ -30,8 +30,8 @@ dependencies:
     specifier: ^1.4.0
     version: 1.4.0(@bufbuild/protoc-gen-es@1.9.0)(@connectrpc/connect@1.4.0)
   '@hono/node-server':
-    specifier: ^1.8.2
-    version: 1.11.1
+    specifier: ^1.11.4
+    version: 1.11.4
   hono:
     specifier: ^4.1.1
     version: 4.3.6
@@ -506,8 +506,8 @@ packages:
     engines: {node: '>=14'}
     dev: false
 
-  /@hono/node-server@1.11.1:
-    resolution: {integrity: sha512-GW1Iomhmm1o4Z+X57xGby8A35Cu9UZLL7pSMdqDBkD99U5cywff8F+8hLk5aBTzNubnsFAvWQ/fZjNwPsEn9lA==}
+  /@hono/node-server@1.11.4:
+    resolution: {integrity: sha512-8TOiiiAqcFC6f62P7M9p6adQREAlWdVi1awehAwgWW+3R65/rKzHnLARO/Hu/466z01VNViBoogqatqXJMyItA==}
     engines: {node: '>=18.14.1'}
     dev: false
 
