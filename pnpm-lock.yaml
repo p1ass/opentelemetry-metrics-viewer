@@ -12,8 +12,8 @@ dependencies:
     specifier: 1.4.0-20240508200659-84bab7e375f9.2
     version: 1.4.0-20240508200659-84bab7e375f9.2(@bufbuild/protobuf@1.9.0)(@connectrpc/connect@1.4.0)
   '@bufbuild/buf':
-    specifier: ^1.31.0
-    version: 1.31.0
+    specifier: ^1.34.0
+    version: 1.34.0
   '@bufbuild/protobuf':
     specifier: ^1.9.0
     version: 1.9.0
@@ -164,8 +164,8 @@ packages:
       - '@bufbuild/protobuf'
     dev: false
 
-  /@bufbuild/buf-darwin-arm64@1.31.0:
-    resolution: {integrity: sha512-C0jArGS/SW0jfpBBmG6xEhUBWQTsGInnPr7y44WYWNS/U5OnnWPJtYQ7xbH0mzYDMx7sZVRV0FKvPO0FPKS+hA==}
+  /@bufbuild/buf-darwin-arm64@1.34.0:
+    resolution: {integrity: sha512-3+h/jSAr7H+KT8MWWRMbN/gQ87KlGLkTGwm4/mpry1ap9Thw/UdOrk5MfmbK3CRM/rlw4mAn1Egu/Q7R5eO98g==}
     engines: {node: '>=12'}
     cpu: [arm64]
     os: [darwin]
@@ -173,8 +173,8 @@ packages:
     dev: false
     optional: true
 
-  /@bufbuild/buf-darwin-x64@1.31.0:
-    resolution: {integrity: sha512-oBTe1T4l2WSukAG+9YS7VHID4N1CuSvAxGBfuzpFQrjjiQZaaTfYuLqqVP6408MyCN7X/LOjfCekR1QToVweNw==}
+  /@bufbuild/buf-darwin-x64@1.34.0:
+    resolution: {integrity: sha512-Jdm0COuA2CMKoef2H8rBsRnc16mJUmCQ2KvJH5otvFrMhzPmr1MUyicCybY26HXFD/6DcnbWZvf6W8LfDMMyGQ==}
     engines: {node: '>=12'}
     cpu: [x64]
     os: [darwin]
@@ -182,8 +182,8 @@ packages:
     dev: false
     optional: true
 
-  /@bufbuild/buf-linux-aarch64@1.31.0:
-    resolution: {integrity: sha512-UN9KsTuO9YS5Vefj/CaqX1wO+hvc3AyGElxzOHMc7S3MWEuqSAFOhxu5I7CyOr2/yoZO2qZPPR29HuzmQsb2+w==}
+  /@bufbuild/buf-linux-aarch64@1.34.0:
+    resolution: {integrity: sha512-utSspJlPmVPh4Ugvn9k7MEEMHDZMI13jvwHkBE6wNSkYxxYTRR5zLHtmysaYQo51Fx+3ar6mL4HnhTqLrgO5GA==}
     engines: {node: '>=12'}
     cpu: [arm64]
     os: [linux]
@@ -191,8 +191,8 @@ packages:
     dev: false
     optional: true
 
-  /@bufbuild/buf-linux-x64@1.31.0:
-    resolution: {integrity: sha512-4uKq5Iu5tNEFE3Mz9a52KFCaywg5xLqwhN6Kf4kAk34kxWJgQ8D3WFe9ZpXHzH7Lj00u3Q+V/3vKCVATHR3tkw==}
+  /@bufbuild/buf-linux-x64@1.34.0:
+    resolution: {integrity: sha512-INCGsPLBL4aK2jHBMdZzEJUPv7f6f8skIUMMip7YdJl1nsIh27C/Dl7Q6A6/sv9IhYibWKAoxP7SuiOv2iTdEw==}
     engines: {node: '>=12'}
     cpu: [x64]
     os: [linux]
@@ -200,8 +200,8 @@ packages:
     dev: false
     optional: true
 
-  /@bufbuild/buf-win32-arm64@1.31.0:
-    resolution: {integrity: sha512-jz7GenlNsqwbC3qaHcBHBO35MycZ1gV8OUSRp/wTXGgZsEZzAyw335JA2NWL+5LaI8cF+CsYd6/uuWzKkdCKTQ==}
+  /@bufbuild/buf-win32-arm64@1.34.0:
+    resolution: {integrity: sha512-g1EogebjJ93bzmyn/fEi47tTz57M+7WYZ7/vX+DFXgLLYIxTWHDK4YN+3Hs+K7Sbx7KaVdsdEqof8xZ4WoVFnQ==}
     engines: {node: '>=12'}
     cpu: [arm64]
     os: [win32]
@@ -209,8 +209,8 @@ packages:
     dev: false
     optional: true
 
-  /@bufbuild/buf-win32-x64@1.31.0:
-    resolution: {integrity: sha512-gw7p3PYam0g7hNwIhNphua5P8GBZczginoWNK3jk5sGVv0TzWOdHrjkVVhkc3DJbRZEg10ExGI3qRfCqiX1IHw==}
+  /@bufbuild/buf-win32-x64@1.34.0:
+    resolution: {integrity: sha512-0rPXP7pV7+2twhcpN8hDdgV68UCiazLRcMBjWKubwcSJhAP8jRLqSJv3VGnXmpdYPbYGDQ0htfcgLNUvzllRhQ==}
     engines: {node: '>=12'}
     cpu: [x64]
     os: [win32]
@@ -218,18 +218,18 @@ packages:
     dev: false
     optional: true
 
-  /@bufbuild/buf@1.31.0:
-    resolution: {integrity: sha512-kM/eueGkp0NDo8p8B6GXr1MdCzf4w8zEV1gbEiDlaLYDoyeHGLtlf5jF/hrb6MsvCccy3x7cc+cj4Wn/DmoR2g==}
+  /@bufbuild/buf@1.34.0:
+    resolution: {integrity: sha512-DR0P746bYiY7ziQTui0bKAvPa7ihCNxONWLtW54HQXvTkGnTc6C1keVaSz4UhNdSsBu/Xsj69GO9SizodfjUtQ==}
     engines: {node: '>=12'}
     hasBin: true
     requiresBuild: true
     optionalDependencies:
-      '@bufbuild/buf-darwin-arm64': 1.31.0
-      '@bufbuild/buf-darwin-x64': 1.31.0
-      '@bufbuild/buf-linux-aarch64': 1.31.0
-      '@bufbuild/buf-linux-x64': 1.31.0
-      '@bufbuild/buf-win32-arm64': 1.31.0
-      '@bufbuild/buf-win32-x64': 1.31.0
+      '@bufbuild/buf-darwin-arm64': 1.34.0
+      '@bufbuild/buf-darwin-x64': 1.34.0
+      '@bufbuild/buf-linux-aarch64': 1.34.0
+      '@bufbuild/buf-linux-x64': 1.34.0
+      '@bufbuild/buf-win32-arm64': 1.34.0
+      '@bufbuild/buf-win32-x64': 1.34.0
     dev: false
 
   /@bufbuild/protobuf@1.9.0:
